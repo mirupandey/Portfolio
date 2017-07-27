@@ -1,0 +1,59 @@
+#logo .row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.row {
+	width: 100%;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h4 {
+	font-size: 1.2em;
+}
+
+hr {
+	font-size: 2em;
+}
+
+section img {
+	width: 100%;
+}
+
+footer {
+	margin-top: 1%;
+}
+
+footer img {
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (max-width: 400px) {
+	.min_401, .min_801{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 401px) and (max-width: 800px) {
+	.max_400, .min_801{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 801px) {
+	.min_401, .max_400{
+		display: none;
+	}
+}
+
+.dark_grey {
+	color: #2d3c49;
+}
+
+.grey {
+	color: #7d97ad;
+}
