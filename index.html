@@ -2,67 +2,80 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>My Portfolio</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
 	<header>
-		<div class="container">
-			<div class="row text-uppercase">
+		<article class="container">
+			<div id="about-me" class="row text-uppercase">
+
 				<!-- Udacity Logo -->
-				<div id="udacity-logo" class="col-md-6">
-					<img class="max_400" src="images/Udacity_150w.png" alt="Udacity Logo">
-					<img class="min_401" src="images/Udacity_200w.png" alt="Udacity Logo">
-					<img class="min_801" src="images/Udacity_200w.png" alt="Udacity Logo">
+				<div id="udacity-logo" class="col-md-4 col-sm-4">
+					<!--<img class="max-400" src="images/Udacity_150w.png" alt="Udacity Logo">
+					<img class="min-401" src="images/Udacity_200w.png" alt="Udacity Logo">
+					<img class="min-801" src="images/Udacity_200w.png" alt="Udacity Logo">-->
+					<img  src="images/Udacity_200w.png"
+      					sizes="(max-width: 400px) 50vw, (min-width: 401px) 50vw"
+     					srcset="images/Udacity_150w.png 400w, images/Udacity_200w.png 401w"
+      					alt="Udacity Logo">
 				</div>
+
 				<!-- Name & Description -->
-				<div id="name-description" class="col-md-4 col-md-offset-2 text-right dark_grey">
+				<div id="name-description" class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 text-right dark_grey">
 					<h1>Mrinal Pandey</h1>
 					<h4>Front-End Web Developer</h4>
 				</div>
 			</div>
-		</div>
+		</article>
 	</header>
-	<div class="container">
-		<hr>
-	</div>
-	<section>
-		<div class="container">
+	<article class="container">
+		<div class="row"><hr></div>
+	</article>
+	<main>
+		<article class="container">
 			<!-- HTML Image -->
 			<div id="html-image" class="row">
 				<div class="col-md-10 col-md-offset-1">
-					<img class="max_400" src="images/HTML_200w.jpg" alt="HTML">
-					<img class="min_401" src="images/HTML_400w.jpg" alt="HTML">
-					<img class="min_801" src="images/HTML_800w.jpg" alt="HTML">
+					<!--<img class="max-400" src="images/HTML_200w.jpg" alt="HTML">
+					<img class="min-401" src="images/HTML_400w.jpg" alt="HTML">
+					<img class="min-801" src="images/HTML_800w.jpg" alt="HTML">-->
+					<img  src="images/HTML_800w.png"
+      					sizes="(max-width: 400px) 50vw, (min-width: 401px) and (max-width: 800px) 100vw, (min-width: 801px) 100vw"
+     					srcset="images/HTML_200w.jpg 400w, images/HTML_400w.jpg 401w, images/HTML_800w.jpg 801w"
+      					alt="HTML">
 				</div>
 			</div>
-		</div>
-	</section>
-	<footer>
-		<div class="container">
+		</article>
+		<article class="container">
 			<!-- Featured Work -->
 			<div id="featured-work" class="row">
 				<div class="col-md-12">
 					<h2 class="grey">Featured Work</h2>
 				</div>
+
 				<div class="col-md-4 text-center dark_grey">
 						<img src="images/puppy1.jpg" alt="Appify" class="img-responsive" data-toggle="modal" data-target="#Appify">
 						<h3 class="text-uppercase">Appify</h3>
-						<p><a href="https://github.com//udacity/Appify/" class="hyperlink dark_grey">https://github.com//udacity/Appify/</a></p>
+						<p><a href="https://github.com//udacity/Appify/" class="hyperlink dark_grey" target="_blank"*>https://github.com//udacity/Appify/</a></p>
 				</div>
+
 				<div class="col-md-4 text-center dark_grey">
 					<img src="images/puppy1.jpg" alt="Sunflower" class="img-responsive" data-toggle="modal" data-target="#Sunflower">
 					<h3 class="text-uppercase">Sunflower</h3>
-					<p><a href="https://github.com//udacity/Sunflower/" class="hyperlink dark_grey">https://github.com//udacity/Sunflower/</a></p>
+					<p><a href="https://github.com//udacity/Sunflower/" class="hyperlink dark_grey" target="_blank">https://github.com//udacity/Sunflower/</a></p>
 				</div>
+
 				<div class="col-md-4 text-center dark_grey">
 					<img src="images/puppy1.jpg" alt="Bokeh" class="img-responsive" data-toggle="modal" data-target="#Bokeh">
 					<h3 class="text-uppercase">Bokeh</h3>
-					<p><a href="https://github.com//udacity/Bokeh/" class="hyperlink dark_grey">https://github.com//udacity/Bokeh/</a></p>
+					<p><a href="https://github.com//udacity/Bokeh/" class="hyperlink dark_grey" target="_blank">https://github.com//udacity/Bokeh/</a></p>
 				</div>
 			</div>
-		</div>
-	</footer>
+		</article>
+	</main>
 </body>
 </html>
